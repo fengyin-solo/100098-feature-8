@@ -5,6 +5,7 @@ const Sample = () => import('@/views/sample/index.vue')
 const Contract = () => import('@/views/contract/index.vue')
 const Task = () => import('@/views/task/index.vue')
 const Method = () => import('@/views/method/index.vue')
+const MethodDetail = () => import('@/views/method/detail.vue')
 const Instrument = () => import('@/views/instrument/index.vue')
 const Standard = () => import('@/views/standard/index.vue')
 const Result = () => import('@/views/result/index.vue')
@@ -30,6 +31,7 @@ const router = createRouter({
     { path: '/contract', name: 'contract', component: Contract },
     { path: '/task', name: 'task', component: Task },
     { path: '/method', name: 'method', component: Method },
+    { path: '/method/:id(\\d+)', name: 'method-detail', component: MethodDetail },
     { path: '/instrument', name: 'instrument', component: Instrument },
     { path: '/standard', name: 'standard', component: Standard },
     { path: '/result', name: 'result', component: Result },
